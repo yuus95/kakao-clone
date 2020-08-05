@@ -1,0 +1,10 @@
+.nav{
+  background-color:#F9F9FA;
+  padding: 30px 0px;
+}
+
+
+.nav__ul{
+  display: flex;
+  justify-content: space-between;
+}
