@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
       <link rel="stylesheet" href="css/styles.css">
-    <title>Friends -  Kokoa Clone</title>
+    <title>find -  Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,11 +23,9 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="far fa-comment-dots fa-2x"></i></span>
-        <span><i class="fas fa-music fa-2x"></i></span>
         <span><i class="fas fa-cog fa-2x"></i></span>
       </div>
     </header>
@@ -37,19 +35,20 @@
 </div> -->
 
 <main class="main-screen">
-    <div class="user-component">
-      <div class="user-component__column">
-        <img src="screen/10.jpg" class="user-component__avatar user-component__avatar--xl">
-        <div class="user-component__text">
-          <h1 class="user-component__title"> KakaoTalk</h1>
-          <h2 class="user-component__Subtitle">Please check My Kakao Account info</h2>
-        </div>
-      </div>
-      <div class="user-component__column">
-        <span class="user-component__time">21:22</span>
-        <div class="badge"> 1</div>
-      </div>
-    </div>
+  <div class="find-icons">
+    <div class="find-icons__icon">
+    <i class="fas fa-qrcode"></i>
+      <span>QR Code</span></div>
+    <div class="find-icons__icon">
+      <i class="far fa-address-book"></i>
+      <span>Add by Contacts</span></div>
+    <div class="find-icons__icon">
+      <i class="fas fa-fingerprint"></i>
+      <span>Add by ID</span></div>
+    <div class="find-icons__icon">
+      <i class="fas fa-envelope-square"></i>
+      <span>Invite</span></div>
+  </div>
 </main>
 
   <!-- nav>ul>li*4>a +tap 한번에 만들어짐 -->
@@ -64,7 +63,7 @@
       <li class="nav__list">
         <a href="chats.html" class="nav__link">
           <span class="nav__notification badge">1</span>
-          <i class="fas fa-comment fa-2x"></i></a>
+          <i class="far fa-comment fa-2x"></i></a>
       </li>
       <li class="nav__list">
         <a href="find.html" class="nav__link"><i class="fas fa-search fa-2x"></i></a>
