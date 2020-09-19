@@ -17,8 +17,19 @@ margin-right: 70px;
 padding-right: -10px;
 }
 
+.more-suggestion__icons-column-image{
+  background-color: var(--yellow);
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-.more-suggestion__icons-column span{
-margin-top: 10px;
-
+.more-suggestion__icons-column-String{
+  opacity: 0.4;
 }
