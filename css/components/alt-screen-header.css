@@ -21,16 +21,6 @@
   font-weight: 600px;
 }
 
-.setting {
-}
-.setting__settings{
-  padding: 25px 0px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-.setting__settings i{
-  font-size: 30px;
-  margin-right: 25px;
-}
-.setting__settings span{
-  font-size: 25px;
+.alt-screen-header__column span:last-child{
+  margin-left: 15px;
 }
