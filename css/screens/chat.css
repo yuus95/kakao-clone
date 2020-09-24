@@ -1,9 +1,77 @@
 #body-color{
   background-color: #ABC1D1;
+
 }
 
-#bodt-color alt-screen-header{
-  position:fixed;
-  top: 20px;
 
+#body-color .status-bar{
+  z-index: 3;
+  background-color: #ABC1D1;
+}
+#body-color .alt-screen-header{
+  position:fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  background-color: #ABC1D1;
+  top: 10px;
+
+}
+
+.main-chat{
+  display: flex;
+  flex-direction:column;
+  top 120px;
+  align-items: center;
+}
+
+ .timestamp{
+  margin-top: 120px;
+  background: #92A4B2;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 30px;
+}
+
+.Messege-row{
+  display: flex;
+  width:100%;
+}
+
+.Messege-row img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+.Messge-row__content{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+.Messge-row__content-title{
+  opacity: 0.4;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.Messge-row__content_content{
+  display: flex;
+  align-items: flex-end;
+}
+
+.Messge-row__content-info{
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.Messge-row__content-time{
+  opacity: 0.4;
+  font-size: 14px;
 }
