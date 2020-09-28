@@ -36,6 +36,7 @@
 .Messege-row{
   display: flex;
   width:100%;
+  margin-bottom: 25px;
 }
 
 .Messege-row img{
@@ -45,33 +46,97 @@
   border-radius: 25px;
 }
 
-.Messge-row__content{
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  height: 100px;
-}
 
 .Messge-row__content-title{
-  opacity: 0.4;
-  font-size: 14px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.Messge-row__content_content{
+.Messge-row__content-content{
   display: flex;
   align-items: flex-end;
 }
 
 .Messge-row__content-info{
   background: white;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   border-top-left-radius: 0px;
 }
-
+.Messge-row__content-title,
 .Messge-row__content-time{
   opacity: 0.4;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+
+.Messege-row-own{
+  justify-content: flex-end;
+}
+
+.Messege-row-own .Messge-row__content-content{
+  flex-direction: row-reverse;
+}
+
+.Messege-row-own .Messge-row__content-info{
+  margin-left: 10px;
+  background-color: var(--yellow);
+  border-top-left-radius:15px;
+  border-top-right-radius: 0px;
+ /* order 로 순서 바꿀 수 있음 */
+}
+
+
+.reply{
+  bottom: 0px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  align-items: center;
+
+}
+
+.reply__column:first-child{
+  width: 10%;
+}
+
+.reply__column:last-child{
+  width: 90%;
+  position: relative;
+  
+}
+
+
+.reply__column:last-child input{
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 15px;
+}
+
+.reply__column>i{
+  opacity: 0.4;
+}
+.reply__column:last-child >i,
+.reply__column:last-child button{
+  position: absolute;
+  top: 10px;
+}
+
+
+.reply__column:last-child >i{
+  right:40px;
+    
+}
+
+.reply__column:last-child> button{
+  right: -20px;
+  background-color: yellow;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  top:4px;
 }
