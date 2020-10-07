@@ -110,3 +110,23 @@ text-align: center;
   bottom: 10px;
   right: 10px;
 }
+
+
+@keyframes Heartbeat{
+  0%{
+    transform: none;
+    color: #FF91D5;
+  }
+  50%{
+    color:red;
+    transform: scale(2);
+  }
+  100%{
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post_heart-count:hover i{
+  animation: Heartbeat 1s ease-in-out infinite;
+}
