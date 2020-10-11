@@ -157,6 +157,7 @@
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 15px;
+  transition:all 0.3s ease-in-out;
 }
 
 .reply__column>i{
@@ -184,8 +185,26 @@
 }
 
 
-.reply:focus-within .reply__column:first-child{
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within i, .reply:focus-within button{
   opacity: 0;
   visibility: hidden;
 }
 
+
+.reply:focus-within input{
+/* ----니콜썜꺼  */
+    /* width: 98vw;
+   transform: translate(-13%); */
+   /* width: 98vw; */
+  
+  transform:translateX(-13%) translateY(80px);
+  max-width: 115%;
+  width: 100vw;
+   /* max-width: 최대 크기를 부모 요싕 크기로 제한한다 */
+}
+
+.reply:focus-within{
+  /* bottom: -80px; */
+  transform: translateY(-80px);
+}
