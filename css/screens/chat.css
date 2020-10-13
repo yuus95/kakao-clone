@@ -184,7 +184,7 @@
   top:4px;
 }
 
-
+/* focus-within <form>의 <input> 필드 중 부모안에 있는 필드 중 하나가 포커스도니 경우 전체를 강조할 떄 유용하다 */
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within i, .reply:focus-within button{
   opacity: 0;
